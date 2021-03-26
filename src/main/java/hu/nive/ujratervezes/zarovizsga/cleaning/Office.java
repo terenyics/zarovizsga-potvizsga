@@ -7,6 +7,11 @@ public class Office implements Clenable{
     private String address;
     private int area;
     private int numberOfLevels;
+    private BuildingType type = BuildingType.OFFICE;
+
+    public BuildingType getType() {
+        return type;
+    }
 
     public Office(String address, int area, int numberOfLevels) {
         this.address = address;
