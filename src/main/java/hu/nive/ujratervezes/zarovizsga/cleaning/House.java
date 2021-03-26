@@ -5,6 +5,11 @@ public class House implements Clenable {
 
     private String address;
     private int area;
+    private BuildingType type = BuildingType.HOUSE;
+
+    public BuildingType getType() {
+        return type;
+    }
 
     public House(String address, int area) {
         this.address = address;
